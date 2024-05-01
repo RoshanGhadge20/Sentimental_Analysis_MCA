@@ -14,12 +14,14 @@ def preprocess_text(text):
 
 def collect_data():
     # Your code to collect text data from sources like customer reviews, social media, or news articles
-    data = ['This product is amazing! I love it.',
- 'Terrible experience with customer service.',
- 'The news article provided great insights.',
- 'I had a pleasant experience shopping with this company.',
- 'Its very bad product, i have disliked it.',
- 'I am not agree with you.']
+    data = [
+        ("This product is amazing! I love it.", "positive"),
+        ("Terrible experience with customer service.", "negative"),
+        ("The news article provided great insights.", "positive"),
+        ("I had a pleasant experience shopping with this company.", "positive"),
+        ("Its very bad product, i have disliked it.", "negative"),
+        ("I am not agree with you.", "negative")
+    ]
 
     return data
 
@@ -37,19 +39,21 @@ def train_model(features, labels):
     model.fit(features, labels)
     return model
 
-def aspect_sentiment_analysis(model, text, aspect):
-    # Check if the text data is present in the cache
-    cache_key = (text, aspect)
-    if cache_key in cache:
-        return cache[cache_key]
-    else:
-        # If not in cache, preprocess the text, extract features, and perform sentiment analysis
-        preprocessed_text = preprocess_text(text)
-        features = vectorizer.transform([preprocessed_text])
-        sentiment = model.predict(features)[0]
-        # Store the result in the cache
-        cache[cache_key] = sentiment
-        return sentiment
+
+def aspect_sentiment_analysis(text, aspect):
+    global vectorizer, model
+
+    # Preprocess the text
+    preprocessed_text = preprocess_text(text)
+
+    # Extract features
+    features = vectorizer.transform([preprocessed_text])
+
+    # Perform sentiment analysis
+    sentiment = model.predict(features)[0]
+
+    return sentiment
+
 
 def deploy_model(model):
     # Your code for deploying the trained sentiment analysis model
@@ -84,5 +88,5 @@ if __name__ == "__main__":
     ]
     for test_text in test_texts:
         for aspect in ["product", "customer service", "news article", "shopping experience"]:
-            sentiment_result = aspect_sentiment_analysis(model, test_text, aspect)
+            sentiment_result = aspect_sentiment_analysis(test_text, aspect)  # Removed 'model' parameter
             print(f"Sentiment Analysis Result for aspect '{aspect}' in text '{test_text}': {sentiment_result}")
