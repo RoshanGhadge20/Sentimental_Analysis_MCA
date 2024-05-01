@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="484e9e02-9259-40a3-babb-4bc6afb87719" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Working_with_NLP/aspect_sentimet_analysis_gui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Working_with_NLP/aspect_based.py" beforeDir="false" afterPath="$PROJECT_DIR$/Working_with_NLP/aspect_sentiment_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Working_with_NLP/aspect_sentimet_analysis_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/Working_with_NLP/aspect_sentimet_analysis_gui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,5 +190,41 @@
       <updated>1713076065290</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="dd5a1255-da17-4d70-ac86-7bd8684a18e3" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="dd5a1255-da17-4d70-ac86-7bd8684a18e3">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

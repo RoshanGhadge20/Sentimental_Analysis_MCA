@@ -7,6 +7,7 @@ from sklearn.exceptions import NotFittedError
 import numpy as np
 import re
 
+
 class AspectSentimentAnalysisApp:
     def __init__(self, master):
         self.master = master
@@ -22,7 +23,9 @@ class AspectSentimentAnalysisApp:
         self.aspect_label.grid(row=1, column=0)
 
         self.aspect_var = tk.StringVar()
-        self.aspect_combobox = ttk.Combobox(master, textvariable=self.aspect_var, values=["product", "customer service", "news article", "shopping experience"])
+        self.aspect_combobox = ttk.Combobox(master, textvariable=self.aspect_var,
+                                            values=["product", "customer service", "news article",
+                                                    "shopping experience"])
         self.aspect_combobox.grid(row=1, column=1, columnspan=2)
 
         self.analyze_button = ttk.Button(master, text="Analyze", command=self.analyze_sentiment)
@@ -33,6 +36,9 @@ class AspectSentimentAnalysisApp:
 
         # Fit vectorizer with vocabulary
         self.fit_vectorizer()
+
+        # Load model
+        self.model = self.load_model()
 
     def fit_vectorizer(self):
         data = self.collect_data()
@@ -72,35 +78,33 @@ class AspectSentimentAnalysisApp:
         features = self.vectorizer.transform([text])
 
         # Perform sentiment analysis
-        sentiment_result = self.aspect_sentiment_analysis(text, aspect)
+        sentiment_result = self.aspect_sentiment_analysis(features, text, aspect)
+        print(sentiment_result)
 
-        messagebox.showinfo("Sentiment Analysis Result", f"Sentiment Analysis Result for aspect '{aspect}' in text '{text}': {sentiment_result}")
+        messagebox.showinfo("Sentiment Analysis Result",
+                            f"Sentiment Analysis Result for aspect '{aspect}' in text '{text}': {sentiment_result}")
 
-    def aspect_sentiment_analysis(self, text, aspect):
-        if not hasattr(self, 'vectorizer'):
-            messagebox.showwarning("Warning", "Please fit the vectorizer first.")
-            return
-
+    def aspect_sentiment_analysis(self, features, text, aspect):
         preprocessed_text = self.preprocess_text(text)
         features = self.vectorizer.transform([preprocessed_text])
 
         try:
-            model = self.load_model()
-            sentiment_result = model.predict(features)[0]
+            sentiment_result = self.model.predict(features)[0]
             return sentiment_result
         except NotFittedError:
             messagebox.showwarning("Warning", "Please fit the model first.")
             return None
-
     def load_model(self):
         model = MultinomialNB()
         # You can load the trained model here
         return model
 
+
 def run_aspect_sentiment_analysis_gui():
     root = tk.Tk()
     app = AspectSentimentAnalysisApp(root)
     root.mainloop()
+
 
 if __name__ == "__main__":
     run_aspect_sentiment_analysis_gui()
