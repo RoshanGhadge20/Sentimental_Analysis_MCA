@@ -79,7 +79,7 @@ class AspectSentimentAnalysisApp:
 
         # Perform sentiment analysis
         sentiment_result = self.aspect_sentiment_analysis(features, text, aspect)
-        print(sentiment_result)
+        #print(sentiment_result)
 
         messagebox.showinfo("Sentiment Analysis Result",
                             f"Sentiment Analysis Result for aspect '{aspect}' in text '{text}': {sentiment_result}")
