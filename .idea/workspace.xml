@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="484e9e02-9259-40a3-babb-4bc6afb87719" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Working_with_NLP/AspectSentimentAnalysisApp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Working_with_NLP/background.jpg" afterDir="false" />
+    <list default="true" id="484e9e02-9259-40a3-babb-4bc6afb87719" name="Changes" comment="some of the GUI related fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -197,6 +195,23 @@
       <option name="presentableId" value="Default" />
       <updated>1713076065290</updated>
     </task>
+    <task id="LOCAL-00001" summary="some of the GUI related fixes">
+      <option name="closed" value="true" />
+      <created>1714753561409</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714753561409</updated>
+    </task>
+    <task id="LOCAL-00002" summary="some of the GUI related fixes">
+      <option name="closed" value="true" />
+      <created>1714753580832</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714753580832</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -239,5 +254,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="some of the GUI related fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="some of the GUI related fixes" />
   </component>
 </project>
