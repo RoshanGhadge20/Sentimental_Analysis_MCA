@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="484e9e02-9259-40a3-babb-4bc6afb87719" name="Changes" comment="some of the GUI related fixes">
+=======
+    <list default="true" id="484e9e02-9259-40a3-babb-4bc6afb87719" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Working_with_NLP/AspectSentimentAnalysisApp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Working_with_NLP/background.jpg" afterDir="false" />
+>>>>>>> 8aa454e11b62bc3e6efcaf7c19e99ab47d8042fa
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,14 +39,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;E:/sentiment_analysis/Working_with_NLP&quot;
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "E:/sentiment_analysis/Working_with_NLP"
+>>>>>>> 8aa454e11b62bc3e6efcaf7c19e99ab47d8042fa
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\sentiment_analysis\Working_with_NLP" />
@@ -49,7 +64,11 @@
       <recent name="E:\sentiment_analysis\Working_with_NLP" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Python.AspectSentimentAnalysisAppwithNER">
+=======
+  <component name="RunManager" selected="Python.AspectSentimentAnalysisApp (1)">
+>>>>>>> 8aa454e11b62bc3e6efcaf7c19e99ab47d8042fa
     <configuration name="AspectSentimentAnalysisApp (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="sentiment_analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -92,6 +111,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
     <configuration name="AspectSentimentAnalysisAppwithNER" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="sentiment_analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -113,6 +133,8 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+=======
+>>>>>>> 8aa454e11b62bc3e6efcaf7c19e99ab47d8042fa
     <configuration name="aspect_sentiment_analysis (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="sentiment_analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -178,11 +200,18 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="Python.AspectSentimentAnalysisAppwithNER" />
+=======
+>>>>>>> 8aa454e11b62bc3e6efcaf7c19e99ab47d8042fa
         <item itemvalue="Python.AspectSentimentAnalysisApp (1)" />
         <item itemvalue="Python.AspectSentimentAnalysisApp" />
         <item itemvalue="Python.aspect_sentimet_analysis_gui" />
         <item itemvalue="Python.aspect_sentiment_analysis (1)" />
+<<<<<<< HEAD
+=======
+        <item itemvalue="Python.aspect_sentiment_analysis" />
+>>>>>>> 8aa454e11b62bc3e6efcaf7c19e99ab47d8042fa
       </list>
     </recent_temporary>
   </component>
